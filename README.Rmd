@@ -28,35 +28,35 @@ devtools::install_github("jrosen48/pisaUSA15")
 
 ## Example
 
-Here is how to load the four datasets:
+Here is how to load the four datasets (just type the name after loading the package with `library(pisaUSA15)`; not run for now as very many of the column names are printed):
 
-```{r example}
+```{r example, eval = F}
 library(pisaUSA15)
 
-stu_assess
-stu_quest
-tch_quest
-sch_quest
+stu_assess # student assessments
+stu_quest # student questionnaires
+tch_quest # teacher questionnaires
+sch_quest # school questionnaires
 ```
 
 ## Merging datasets
 
 Joining the student assessment and student questionnaire:
 
-```{r joining-student-data, message = F}
+```{r joining-student-data, message = F, eval = F}
 library(dplyr)
 left_join(stu_assess, stu_quest, by = "CNTSTUID")
 ```
 
 Joining student-level data (either the student assessment or student questionnaire) with teacher or school questionnaires:
 
-```{r joining-student-and-teacher-or-school-data}
+```{r joining-student-and-teacher-or-school-data, eval = F}
 left_join(stu_quest, tch_quest, by = "SCHID")
 left_join(stu_assess, tch_quest, by = "SCHID")
 ```
 
 Joining teacher and school questionnaires:
 
-```{r}
+```{r, eval = F}
 left_join(tch_quest, sch_quest, by = "SCHID")
 ```
