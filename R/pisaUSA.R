@@ -7,7 +7,7 @@
 #'   \item{SCHID}{international school ID}
 #'   ...
 #' }
-#' @importFrom tibble tibble
+#' @import tibble
 
 "stu_quest"
 
@@ -20,7 +20,7 @@
 #'   \item{SCHID}{international school ID}
 #'   ...
 #' }
-#' @importFrom tibble tibble
+#' @import tibble
 
 "stu_assess"
 
@@ -32,7 +32,7 @@
 #'   \item{SCHID}{international school ID}
 #'   ...
 #' }
-#' @importFrom tibble tibble
+#' @import tibble
 
 "sch_quest"
 
@@ -45,6 +45,6 @@
 #'   \item{CNTTCHID}{international teacher ID}
 #'   ...
 #' }
-#' @importFrom tibble tibble
+#' @import tibble
 
 "tch_quest"
