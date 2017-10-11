@@ -44,7 +44,7 @@ sch_quest
 
 Joining the student assessment and student questionnaire:
 
-```{r joining-student-data}
+```{r joining-student-data, message = F}
 library(dplyr)
 left_join(stu_assess, stu_quest, by = "CNTSTUID")
 ```

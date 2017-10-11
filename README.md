@@ -217,14 +217,6 @@ Joining the student assessment and student questionnaire:
 
 ``` r
 library(dplyr)
-#> 
-#> Attaching package: 'dplyr'
-#> The following objects are masked from 'package:stats':
-#> 
-#>     filter, lag
-#> The following objects are masked from 'package:base':
-#> 
-#>     intersect, setdiff, setequal, union
 left_join(stu_assess, stu_quest, by = "CNTSTUID")
 #> # A tibble: 5,712 x 2,970
 #>    CNTRYID.x CNT.x CNTSCHID.x CNTSTUID CYC.x NatCen.x Region.x STRATUM.x
