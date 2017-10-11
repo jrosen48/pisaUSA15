@@ -1,3 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^raw_data/.+$
+^README\.Rmd$
+^README-.*\.png$

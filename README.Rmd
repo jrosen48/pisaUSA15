@@ -1,0 +1,56 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# pisaUSA15
+
+The goal of pisaUSA15 is to make it easy to access the student assessment and questionnaire, teacher questionnaire, and school questionnaire data from the 2015 [PISA assessment](http://www.oecd.org/pisa/data/). The 2015 dataset includes responses from more than 500,000 students, while this package includes the almost 6,000 responses associated with students in the USA. 
+
+## Installation
+
+You can install pisaUSA15 from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("jrosen48/pisaUSA15")
+```
+
+## Example
+
+Here is how to load the four datasets:
+
+```{r example}
+library(pisaUSA15)
+
+stu_assesss
+stu_quest
+tch_quest
+sch_quest
+```
+
+## Merging datasets
+
+Joining the student assessment and student questionnaire:
+
+```{r}
+left_join(stu_assess, stu_quest, by = "CNTSTUID")
+```
+
+Joining student-level data (either the student assessment or student questionnaire) with teacher or school questionnaires:
+
+```{r}
+left_join(stu_quest, tch_quest, by = "SCHID")
+left_join(stu_quest, escs_2012, by = "SCHID")
+left_join(stu_assess, tch_quest, by = "SCHID")
+left_join(stu_assess, escs_2012, by = "SCHID")
+```
