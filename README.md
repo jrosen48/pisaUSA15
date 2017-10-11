@@ -51,3 +51,14 @@ Joining teacher and school questionnaires:
 ``` r
 left_join(tch_quest, sch_quest, by = "SCHID")
 ```
+
+Download the codebook
+---------------------
+
+You can use the following function to download the codebook through a web browser:
+
+``` r
+open_codebook()
+```
+
+Depending on your system's default settings, this may open the codebook in the browser or start a download.

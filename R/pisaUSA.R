@@ -48,3 +48,12 @@
 #' @import tibble
 
 "tch_quest"
+
+#' Open codebook
+#' @details Open the codebook in a web browser
+#' @return Launches a web browser
+#' @export
+
+open_codebook <- function(){
+    browseURL("http://www.oecd.org/pisa/data/2015database/Codebook_CMB.xlsx")
+}
