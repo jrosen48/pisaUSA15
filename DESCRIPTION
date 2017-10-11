@@ -1,0 +1,11 @@
+Package: pisaUSA
+Type: Package
+Title: Student questionnaire data from the 2015 PISA survey for students in the USA
+Version: 0.1.0
+Authors@R: person("Joshua", "Rosenberg", email = "jmichaelrosenberg@gmail.com", role = c("aut", "cre"))
+Maintainer: Joshua Rosenberg <jrosen@msu.edu>
+Description: Data package that provides student questionnaire data from the 2015 PISA for students in the United States of America.
+    More information is available here: http://www.oecd.org/pisa/data/
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
