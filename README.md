@@ -3,7 +3,7 @@
 pisaUSA15
 =========
 
-The goal of pisaUSA15 is to make it easy to access the student assessment and questionnaire, teacher questionnaire, and school questionnaire data from the 2015 [PISA assessment](http://www.oecd.org/pisa/data/). The 2015 dataset includes responses from more than 500,000 students, while this package includes the almost 6,000 responses associated with students in the USA.
+The goal of `pisaUSA15` is to make it easy to access the student assessment and questionnaire, teacher questionnaire, and school questionnaire data from the 2015 [PISA assessment](http://www.oecd.org/pisa/data/). The 2015 assessment includes responses from more than 500,000 students, while this package includes the almost 6,000 responses associated with students in the USA.
 
 Installation
 ------------
