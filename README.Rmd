@@ -32,7 +32,7 @@ Here is how to load the four datasets:
 ```{r example}
 library(pisaUSA15)
 
-stu_assesss
+stu_assess
 stu_quest
 tch_quest
 sch_quest
@@ -42,15 +42,20 @@ sch_quest
 
 Joining the student assessment and student questionnaire:
 
-```{r}
+```{r joining-student-data}
+library(dplyr)
 left_join(stu_assess, stu_quest, by = "CNTSTUID")
 ```
 
 Joining student-level data (either the student assessment or student questionnaire) with teacher or school questionnaires:
 
-```{r}
+```{r joining-student-and-teacher-or-school-data}
 left_join(stu_quest, tch_quest, by = "SCHID")
-left_join(stu_quest, escs_2012, by = "SCHID")
 left_join(stu_assess, tch_quest, by = "SCHID")
-left_join(stu_assess, escs_2012, by = "SCHID")
+```
+
+Joining teacher and school questionnaires:
+
+```{r}
+left_join(tch_quest, sch_quest, by = "SCHID")
 ```
