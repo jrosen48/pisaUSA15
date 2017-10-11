@@ -22,7 +22,6 @@ Here is how to load the four datasets:
 
 ``` r
 library(pisaUSA15)
-library(tibble)
 
 stu_assess
 #> # A tibble: 5,712 x 2,049

@@ -32,7 +32,6 @@ Here is how to load the four datasets:
 
 ```{r example}
 library(pisaUSA15)
-library(tibble)
 
 stu_assess
 stu_quest
