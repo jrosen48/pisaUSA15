@@ -70,3 +70,9 @@ open_codebook()
 ```
 
 Depending on your system's default settings, this may open the codebook in the browser or start a download. 
+
+## Other data
+
+Also see these items here: https://view.officeapps.live.com/op/view.aspx?src=https://www.oecd.org/pisa/sitedocument/PISA-2015-Technical-Report-2015-Annex-A-Item-Pool-Classification.xlsx
+
+And the technical report here: http://www.oecd.org/pisa/data/2015-technical-report/
